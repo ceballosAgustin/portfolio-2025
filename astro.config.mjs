@@ -7,6 +7,11 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   outDir: './dist',
   vite: {
+    build: {
+      rollupOptions: {
+        preserveEntrySignatures: 'strict',
+      }
+    },
     plugins: [tailwindcss()]
   }
 });

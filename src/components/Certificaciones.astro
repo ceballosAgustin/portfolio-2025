@@ -164,8 +164,7 @@
 </div>
 </section>
 
-<script>
-import { initCarousels } from "../scripts/carousel";
-
-    initCarousels();
+<script type="module">
+    import { initCarousels } from '/scripts/carousel.js';
+    document.addEventListener('DOMContentLoaded', initCarousels);
 </script>
