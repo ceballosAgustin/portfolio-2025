@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+        --color-light-grey: #d1d5db;
+        --color-light-lavanda: #C2B2FF;
+        --color-light-violet: #9881F5;
+        --color-light-pink: #FFB4E6;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(25deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.animate-wave {
+    animation: wave 1.2s ease-in-out infinite;
+    transform-origin: 75% 80%;
+    will-change: transform;
+}
+
+@layer utilities {
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .carousel-container {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    }

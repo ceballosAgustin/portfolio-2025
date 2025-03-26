@@ -1,0 +1,140 @@
+---
+import SocialPill from "./SocialPill.astro";
+import HTMLIcon from "../../public/icons/frontend/HTML.astro";
+import CSSIcon from "../../public/icons/frontend/CSS.astro";
+import JavaScriptIcon from "../../public/icons/frontend/JavaScript.astro";
+import ReactIcon from "../../public/icons/frontend/React.astro";
+import AngularIcon from "../../public/icons/frontend/Angular.astro";
+
+import JavaIcon from "../../public/icons/backend/Java.astro";
+import SpringBootIcon from "../../public/icons/backend/SpringBoot.astro";
+import SpringDataJPAIcon from "../../public/icons/backend/SpringDataJPA.astro";
+import SpringSecurityIcon from "../../public/icons/backend/SpringSecurity.astro";
+import CSharpIcon from "../../public/icons/backend/CSharp.astro";
+import DotNetIcon from "../../public/icons/backend/DotNet.astro";
+import NodeJSIcon from "../../public/icons/backend/NodeJS.astro";
+
+import MySQLIcon from "../../public/icons/databases/MySQL.astro";
+import MongoDBIcon from "../../public/icons/databases/MongoDB.astro";
+import SQLServerIcon from "../../public/icons/databases/SQLServer.astro";
+
+import GitIcon from "../../public/icons/tools/Git.astro";
+import PostmanIcon from "../../public/icons/tools/Postman.astro";
+import FigmaIcon from "../../public/icons/tools/Figma.astro";
+import TrelloIcon from "../../public/icons/tools/Trello.astro";
+---
+
+<h3 class="text-2xl font-semibold text-center mb-8 mt-8 text-light-pink">Frontend</h3>
+<nav class="flex flex-wrap justify-center gap-3 md:gap-4 lg:gap-5">
+    <SocialPill isSkill isPillOutProject>
+        <HTMLIcon class="size-7" aria-label="HTML" />
+        <span class="sr-only">HTML</span>
+        HTML
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <CSSIcon class="size-7" aria-label="CSS" />
+        <span class="sr-only">CSS</span>
+        CSS
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <JavaScriptIcon class="size-7" aria-label="JavaScript" />
+        <span class="sr-only">JavaScript</span>
+        JavaScript
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <ReactIcon class="size-7" aria-label="React" />
+        <span class="sr-only">React</span>
+        React
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <AngularIcon class="size-7" aria-label="Angular" />
+        <span class="sr-only">Angular</span>
+        Angular
+    </SocialPill>
+</nav>
+
+<h3 class="text-2xl font-semibold text-center mb-8 mt-12 text-light-pink">Backend</h3>
+<div class="flex flex-col items-center gap-8">
+    <nav class="flex flex-wrap justify-center gap-4">
+        <SocialPill isSkill isPillOutProject>
+            <JavaIcon class="size-7" aria-label="Java" />
+            <span class="sr-only">Java</span>
+            Java
+        </SocialPill>
+        <SocialPill isSkill isPillOutProject>
+            <SpringBootIcon class="size-7" aria-label="Spring Boot" />
+            <span class="sr-only">Spring Boot</span>
+            Spring Boot
+        </SocialPill>
+        <SocialPill isSkill isPillOutProject>
+            <SpringDataJPAIcon class="size-7" aria-label="Spring Data JPA" />
+            <span class="sr-only">Spring Data JPA</span>
+            Spring Data JPA
+        </SocialPill>
+        <SocialPill isSkill isPillOutProject>
+            <SpringSecurityIcon class="size-7" aria-label="Spring Security" />
+            <span class="sr-only">Spring Security</span>
+            Spring Security
+        </SocialPill>
+    </nav>
+    <nav class="flex flex-wrap justify-center gap-4">
+        <SocialPill isSkill isPillOutProject>
+            <CSharpIcon class="size-7" aria-label="C#" />
+            <span class="sr-only">C#</span>
+            C#
+        </SocialPill>
+        <SocialPill isSkill isPillOutProject>
+            <DotNetIcon class="size-7" aria-label=".NET" />
+            <span class="sr-only">.NET / ASP.NET</span>
+            .NET / ASP.NET
+        </SocialPill>
+        <SocialPill isSkill isPillOutProject>
+            <NodeJSIcon class="size-7" aria-label="NodeJS" />
+            <span class="sr-only">NodeJS</span>
+            NodeJS
+        </SocialPill>
+    </nav>
+</div>
+
+<h3 class="text-2xl font-semibold text-center mb-8 mt-12 text-light-pink">Bases de datos</h3>
+<nav class="flex flex-wrap justify-center gap-4">
+    <SocialPill isSkill isPillOutProject>
+        <MySQLIcon class="size-7" aria-label="MySQL" />
+        <span class="sr-only">MySQL</span>
+        MySQL
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <MongoDBIcon class="size-7" aria-label="MongoDB" />
+        <span class="sr-only">MongoDB</span>
+        MongoDB
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <SQLServerIcon class="size-7" aria-label="Microsoft SQL Server" />
+        <span class="sr-only">Microsoft SQL Server</span>
+        Microsoft SQL Server
+    </SocialPill>
+</nav>
+
+<h3 class="text-2xl font-semibold text-center mb-8 mt-12 text-light-pink">Herramientas</h3>
+<nav class="flex flex-wrap justify-center gap-4">
+    <SocialPill isSkill isPillOutProject>
+        <GitIcon class="size-7" aria-label="Git" />
+        <span class="sr-only">Git</span>
+        Git
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <PostmanIcon class="size-7" aria-label="Postman" />
+        <span class="sr-only">Postman</span>
+        Postman
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <FigmaIcon class="size-7" aria-label="Figma" />
+        <span class="sr-only">Figma</span>
+        Figma
+    </SocialPill>
+    <SocialPill isSkill isPillOutProject>
+        <TrelloIcon class="size-7" aria-label="Trello" />
+        <span class="sr-only">Trello</span>
+        Trello
+    </SocialPill>
+</nav>

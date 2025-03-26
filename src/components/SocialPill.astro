@@ -1,0 +1,15 @@
+---
+const { isSocialCursor = false, isPillOutProject = false } = Astro.props
+---
+
+<a class={`rounded-full border border-light-pink/20 flex justify-center items-center ml-1 mr-1  
+gap-x-2 py-2 px-5 transition-all duration-300 bg-light-pink/5 hover:bg-light-pink/10 
+hover:border-light-pink/30
+${isPillOutProject ? 'hover:scale-110' : ''}
+${isSocialCursor ? 'cursor-pointer' : 'cursor-default'}`} 
+{...Astro.props}
+target="_blank"
+rel="noopener noreferrer"
+>
+    <slot />
+</a>

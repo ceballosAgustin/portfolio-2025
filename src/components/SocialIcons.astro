@@ -1,0 +1,16 @@
+---
+import SocialPill from "./SocialPill.astro";
+import LinkedInIcon from '../../public/icons/LinkedIn.astro'
+import GitHubIcon from '../../public/icons/GitHub.astro'
+---
+
+<nav class="flex gap-x-2 mt-8">
+    <SocialPill isSocialCursor isPillOutProject href="https://www.linkedin.com/in/ceballos-agustin/">
+        <LinkedInIcon class="size-8" />
+        LinkedIn
+    </SocialPill>
+    <SocialPill isSocialCursor isPillOutProject href="https://github.com/ceballosAgustin">
+        <GitHubIcon class="size-8" />
+        GitHub
+    </SocialPill>
+</nav>

@@ -1,0 +1,198 @@
+---
+import SocialPill from "./SocialPill.astro";
+import JavaIcon from "../../public/icons/backend/Java.astro";
+import SpringBootIcon from "../../public/icons/backend/SpringBoot.astro";
+import SpringSecurityIcon from "../../public/icons/backend/SpringSecurity.astro";
+import AngularIcon from "../../public/icons/frontend/Angular.astro";
+import NodeJSIcon from "../../public/icons/backend/NodeJS.astro";
+import CSharpIcon from "../../public/icons/backend/CSharp.astro";
+import DotNetIcon from "../../public/icons/backend/DotNet.astro";
+import HTMLIcon from "../../public/icons/frontend/HTML.astro";
+import CSSIcon from "../../public/icons/frontend/CSS.astro";
+import SQLServerIcon from "../../public/icons/databases/SQLServer.astro";
+
+import GitHubIcon from "../../public/icons/GitHub.astro";
+---
+
+<section id="proyectos" aria-label="Proyectos realizados" 
+    class="min-h-screen p-4 md:p-8 pt-20 md:pt-24">
+    <h2 class="text-4xl font-bold text-center mb-12">Proyectos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
+        <div class="bg-gray-900/50 p-6 rounded-xl border border-light-pink/20 
+        hover:border-light-lavanda/40 transition-all group" role="listitem">
+        <div class="w-full h-40 md:h-48 overflow-hidden rounded-lg">
+            <img src="/public/images/proyectos/Proyecto-1-Hastock.webp" 
+                alt="Imagen de presentación del sistema de stock Hastock mostrando interfaz de gestión de inventario" 
+                class="w-full object-cover rounded-lg 
+                transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="300"
+                itemprop="image">
+        </div>
+            <h3 class="text-xl md:text-2xl font-bold text-light-pink mt-4 md:mt-6">Hastock - Sitio web</h3>
+            <p class="text-silver-metallic text-sm md:text-base mt-3 md:mt-4 font-semibold">
+                Universidad Nacional de Lanús - 2024
+            </p>
+            <p class="text-silver-metallic text-sm md:text-base mt-1 md:mt-2">
+                Trabajo Práctico Cuatrimestral sobre un sistema de stock para la materia Orientación a Objetos 2.
+            </p>
+            <div class="flex flex-wrap gap-2 md:gap-3 mt-4 md:mt-6">
+                <SocialPill class="text-xs md:text-sm">
+                    <JavaIcon class="size-4 md:size-5" aria-label="Java" />
+                    <span class="sr-only">Java</span>
+                    Java
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <SpringBootIcon class="size-4 md:size-5" aria-label="Spring Boot" />
+                    <span class="sr-only">Spring Boot</span>
+                    Spring Boot
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <SpringSecurityIcon class="size-4 md:size-5" aria-label="Spring Security" />
+                    <span class="sr-only">Spring Security</span>
+                    Spring Security
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <AngularIcon class="size-4 md:size-5" aria-label="Angular" />
+                    <span class="sr-only">Angular</span>
+                    Angular
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <NodeJSIcon class="size-4 md:size-5" aria-label="NodeJS" />
+                    <span class="sr-only">NodeJS</span>
+                    NodeJS
+                </SocialPill>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 mt-4 md:mt-6">
+                <a href="https://github.com/leandroblandi/grupo-21-OO2-2024" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 
+                border border-light-grey/20 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-gray-700/20 hover:scale-105"
+                aria-label="Ver repositorio de Hastock en GitHub (se abre en una ventana nueva)">   
+                <GitHubIcon class="size-4 md:size-5" />
+                    <span>Ver Repositorio</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-900/50 p-6 rounded-xl border border-light-pink/20 
+        hover:border-light-lavanda/40 transition-all group">
+        <div class="w-full h-48 overflow-hidden rounded-lg">
+            <img src="/public/images/proyectos/Proyecto-2-Techforb.webp" 
+                alt="Imagen de presentación del proyecto número 2 realizado para una prueba técnica de la empresa Techforb" 
+                class="w-full object-cover rounded-lg 
+                transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="300"
+                itemprop="image">
+        </div>
+            <h3 class="text-xl md:text-2xl font-bold text-light-pink mt-4 md:mt-6">Sistema de Monitoreo - Sitio web</h3>
+            <p class="text-silver-metallic text-sm md:text-base mt-3 md:mt-4 font-semibold">
+                Techforb - 2024
+            </p>
+            <p class="text-silver-metallic text-sm md:text-base mt-1 md:mt-2">
+                Proyecto realizado para una prueba técnica de la empresa Techforb, se trata de un portal de monitoreo de plantas. 
+            </p>
+            <div class="flex flex-wrap gap-2 md:gap-3 mt-4 md:mt-6">
+                <SocialPill class="text-xs md:text-sm">
+                    <JavaIcon class="size-4 md:size-5" aria-label="Java" />
+                    <span class="sr-only">Java</span>
+                    Java
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <SpringBootIcon class="size-4 md:size-5" aria-label="Spring Boot" />
+                    <span class="sr-only">Spring Boot</span>
+                    Spring Boot
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <SpringSecurityIcon clclass="size-4 md:size-5" aria-label="Spring Security" />
+                    <span class="sr-only">Spring Security</span>
+                    Spring Security
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <AngularIcon class="size-4 md:size-5" aria-label="Angular" />
+                    <span class="sr-only">Angular</span>
+                    Angular
+                </SocialPill>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 mt-4 md:mt-6">
+                <a href="https://github.com/ceballosAgustin/servicio-monitoreo-front" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 
+                border border-light-grey/20 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-gray-700/20 hover:scale-105"
+                aria-label="Ver repositorio del Sistema de Monitoreo para Techforb en GitHub (se abre en una ventana nueva)">   
+                <GitHubIcon class="size-4 md:size-5" />
+                    <span>Ver Repositorio</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="bg-gray-900/50 p-6 rounded-xl border border-light-pink/20 
+        hover:border-light-lavanda/40 transition-all group">
+        <div class="w-full h-48 overflow-hidden rounded-lg">
+            <img src="/public/images/proyectos/Proyecto-3-Hadestock.webp" 
+            alt="Imagen de presentación del proyecto número 3 llamado Hadestock" 
+                class="w-full object-cover rounded-lg 
+                transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="300"
+                itemprop="image">
+        </div>
+            <h3 class="text-xl md:text-2xl font-bold text-light-pink mt-4 md:mt-6">Hadestock - Sitio web</h3>
+            <p class="text-silver-metallic text-sm md:text-base mt-3 md:mt-4 font-semibold">
+                Maxi Programa - 2024
+            </p>
+            <p class="text-silver-metallic text-sm md:text-base mt-1 md:mt-2">
+                Trabajo Práctico Final del Curso C# Nivel 3, se trata de una aplicación web para la gestión de artículos de un comercio.
+            </p>
+            <div class="flex flex-wrap gap-2 md:gap-3 mt-4 md:mt-6">
+                <SocialPill class="text-xs md:text-sm">
+                    <CSharpIcon class="size-4 md:size-5" aria-label="C#" />
+                    <span class="sr-only">C#</span>
+                    C#
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <DotNetIcon class="size-4 md:size-5" aria-label=".NET/ASP.NET" />
+                    <span class="sr-only">.NET / ASP.NET</span>
+                    .NET / ASP.NET
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <HTMLIcon class="size-4 md:size-5" aria-label="HTML" />
+                    <span class="sr-only">HTML</span>
+                    HTML
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <CSSIcon class="size-4 md:size-5" aria-label="CSS" />
+                    <span class="sr-only">CSS</span>
+                    CSS
+                </SocialPill>
+                <SocialPill class="text-xs md:text-sm">
+                    <SQLServerIcon class="size-4 md:size-5" aria-label="Microsoft SQL Server" />
+                    <span class="sr-only">Microsoft SQL Server</span>
+                    Microsoft SQL Server
+                </SocialPill>
+            </div>
+            <div class="flex flex-wrap justify-center gap-3 md:gap-4 mt-4 md:mt-6">
+                <a href="https://github.com/ceballosAgustin/tp-final-nivel-3" 
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 
+                border border-light-grey/20 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition-all duration-300 shadow-lg hover:shadow-gray-700/20 hover:scale-105"
+                aria-label="Ver repositorio de Hadestock en GitHub (se abre en una ventana nueva)">
+                <GitHubIcon class="size-4 md:size-5" />
+                    <span>Ver Repositorio</span>
+                </a>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
