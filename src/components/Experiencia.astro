@@ -1,0 +1,74 @@
+---
+import BriefcaseIcon from "../../public/icons/Briefcase.astro";
+import SocialPill from "./SocialPill.astro";
+import AngularIcon from "../../public/icons/frontend/Angular.astro";
+import DotNetIcon from "../../public/icons/backend/DotNet.astro";
+import SQLServerIcon from "../../public/icons/databases/SQLServer.astro";
+---
+
+<section id="experiencia" aria-label="Experiencia Laboral" 
+    class="min-h-screen p-4 md:p-8 pt-20 md:pt-24 flex flex-col justify-center items-center">
+    
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 flex items-center gap-x-3">
+        Experiencia Laboral
+    </h2>
+
+    <div class="relative border-s border-gray-200 dark:border-gray-700 ml-3 md:ml-0">                  
+        <li class="mb-10 ms-6 list-none group">            
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-light-pink rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 bg-opacity-80">
+                <BriefcaseIcon class="w-3 h-3 text-white" />
+            </span>
+            <div class="p-6 bg-gray-900/50 rounded-xl border border-light-pink/20 hover:border-light-lavanda/40 transition-all shadow-lg hover:shadow-light-pink/10 max-w-2xl">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4 gap-4">
+                    <div class="flex items-center gap-4">
+                        <img src="/images/logos/logo-tecnolab.webp" 
+                            alt="Logo Tecnolab S.A." 
+                            class="w-12 h-12 rounded-full object-cover border border-light-pink/30 shadow-sm transition-transform hover:scale-110 duration-300"
+                            loading="lazy"
+                            width="48"
+                            height="48"
+                        >
+                        <div>
+                            <h3 class="text-xl font-bold text-light-pink">Desarrollador Full Stack Jr.</h3>
+                            <p class="text-lg font-semibold text-white">Tecnolab S.A.</p>
+                        </div>
+                    </div>
+                    <time class="text-sm font-normal text-gray-400 bg-gray-800/50 px-3 py-1 rounded-full border border-gray-700 w-fit">08/2025 - Presente</time>
+                </div>
+                
+                <p class="mb-4 text-base font-normal text-silver-metallic text-pretty leading-relaxed">
+                    Mi trabajo se divide en estos dos pilares estratégicos:
+                </p>
+                <ul class="mb-6 space-y-2 text-base font-normal text-silver-metallic text-pretty leading-relaxed list-inside">
+                    <li class="flex gap-2">
+                        <span class="text-light-pink font-bold">•</span>
+                        <span>
+                            <span class="text-light-pink font-semibold">Desarrollo y Arquitectura</span>: Implementación de funcionalidades integrales utilizando <span class="text-light-pink font-semibold">Angular</span> y <span class="text-light-pink font-semibold">.NET</span>, priorizando el uso de <span class="font-semibold">patrones de diseño</span> y asegurando la correcta integración de <span class="text-light-pink font-semibold">servicios RESTful</span> para lograr aplicaciones escalables y mantenibles.
+                        </span>
+                    </li>
+                    <li class="flex gap-2">
+                        <span class="text-light-pink font-bold">•</span>
+                        <span>
+                            <span class="text-light-pink font-semibold">Optimización de Datos</span>: Diseño de <span class="font-semibold">procedimientos almacenados</span> y optimización de consultas en <span class="text-light-pink font-semibold">SQL Server</span>, logrando una reducción significativa en los <span class="font-semibold">tiempos de respuesta</span> del sistema y mejorando la <span class="font-semibold">experiencia final del usuario</span>.
+                        </span>
+                    </li>
+                </ul>
+                
+                <div class="flex flex-wrap gap-2 md:gap-3">
+                    <SocialPill class="text-xs md:text-sm">
+                        <AngularIcon class="size-4 md:size-5" />
+                        Angular
+                    </SocialPill>
+                    <SocialPill class="text-xs md:text-sm">
+                        <DotNetIcon class="size-4 md:size-5" />
+                        .NET
+                    </SocialPill>
+                    <SocialPill class="text-xs md:text-sm">
+                        <SQLServerIcon class="size-4 md:size-5" />
+                        SQL Server
+                    </SocialPill>
+                </div>
+            </div>
+        </li>
+    </div>
+</section>
